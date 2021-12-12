@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-query</title>
+
+        <style>
+            h1{
+                margin-bottom: 10px;
+                border: 1px solid black;
+            }
+            #p1{
+                background-color: blueviolet;
+            }
+            #p2{
+                background-color: darkgreen;
+                width: 300px;
+                height: 50px;
+            }
+            @media(min-width: 1200px){
+                #p1{
+                    background-color: red;
+                    width: 80%;
+                }
+                #p2{
+                    background-color: brown;
+                    width: 100%;
+                }
+            }
+            @media(min-width: 992px) and (max-width: 1199px){
+                #p1{
+                    background-color: goldenrod;
+                    width: 50%;
+                }
+                #p2{
+                    background-color: black;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+<body>
+    <h1> Media Queries</h2>
+        <p id="p1"></p>
+        <p id="p2"></p>
+    
+</body>
+</html>
